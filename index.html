@@ -8,12 +8,408 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body class="font-raleway">
     <header>
-
+        <nav class="container mx-auto lg:px-24 px-3 py-3">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>   
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-lg">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <button class="btn bg-[#1DD1001A] ml-56">
+                  <p class="text-[#1DD100] text-xl">Bus</p>
+                  <img src="images/bus-icon.png" alt="">
+                </button>
+              </div>
+        </nav>
     </header>
     <main>
-
+      <div class="container mx-auto lg:px-24 px-3 py-3">
+        <div class="hero bg-contain min-h-screen bg-no-repeat" style="background-image: url(images/banner.png);">
+          <div class=""></div>
+          <div class="hero-content text-center">
+            <div class="">
+              <h1 class="text-white mb-5 text-5xl font-bold">End-to-End Travel with</h1>
+              <p class="text-[#1DD100] text-5xl font-bold mb-5">P Paribahan</p>
+              <p class="mb-5 w-2/3 mx-auto text-white">Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <button class="btn bg-[#1DD100] border-none">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card section -->
+      <section class="container mx-auto lg:px-24 px-3 py-3">
+        <h1 class="font-bold text-4xl text-center mb-6">Best offers for you</h1>
+        <div class="grid md:grid-cols-2 gap-2 lg:gap-10">
+          <!-- 1 -->
+        <div class="card bg-base-100 bg-[#FFBF0F]">
+          <div class="flex flex-row px-4 lg:px-16">
+            <div class="flex flex-col justify-center items-center p-10">
+              <h1 class="font-inter font-extrabold text-4xl">15% OFF</h1>
+              <h1 class="font-semibold text-xl "> on your next purchase
+              </h1>
+              <h1 class="text-lg font-semibold text-gray-600">use by January 2024</h1>
+            </div>
+           <div>
+             <img src="images/cupon-devider.png" alt="">
+           </div>
+           <div class="flex flex-col justify-center items-center">
+             <h1 class="text-3xl font-extrabold">550 Taka</h1>
+             <h1 class="text-lg font-semibold text-gray-600">Coupon Code</h1>
+           </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="card bg-base-100 bg-[#F78C9C]">
+          <div class="flex flex-row px-16">
+            <div class="flex flex-col p-10 justify-center items-center">
+              <h1 class="font-inter font-extrabold text-4xl">20% OFF</h1>
+              <h1 class="font-semibold text-xl "> on your next purchase
+              </h1>
+              <h1 class="text-lg font-semibold text-gray-600">use by January 2024</h1>
+            </div>
+           <div>
+             <img src="images/cupon-devider.png" alt="">
+           </div>
+           <div class="flex flex-col justify-center items-center">
+             <h1 class="text-3xl font-extrabold">Couple 20</h1>
+             <h1 class="text-lg font-semibold text-gray-600">Coupon Code</h1>
+           </div>
+          </div>
+        </div>
+        </div>
+        <button class="btn text-lg font-bold text-[#1DD100] border-[#1DD100] mt-20 flex justify-center items-center mx-auto mb-20">See All Offers</button>
+      </section>
+      <section class="container mx-auto lg:px-24 px-3 py-3">
+        <h1 class="text-4xl font-bold text-center mb-5">Hanif Paribahan</h1>
+        <p class="font-inter text-lg w-2/3 mx-auto text-center"> In deleniti eaque aut repudiandae et a id nisi. Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined</p>
+          <!-- title -->
+          <div class="card  bg-base-100 shadow-2xl mt-8 ">
+            <div class="  flex flex-row ">
+             <!-- container -->
+             <div>
+              <div class="flex justify-between gap-96  h-40 p-5 ">
+                <div class="flex p-5 gap-5">
+                  <img class="h-[48px]" src="images/bus-logo.png" alt="">
+                  <div class="flex flex-col gap-4">
+                    <h1 class=""><span class="text-2xl font-bold">Greenline Paribahan</span><br>Coach-009-WEB ! AC_Business</h1>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn border-green-300 bg-[#1DD1001A] mt-5 font-inter"> <img src="images/seat-green.png" alt="">
+                    <h1 class="text-lg text-[#1DD100] "><span id="seats-left"> 40</span> Seats left</h1></button>
+                </div>
+               </div>
+                <div class=" m-5 rounded-lg bg-gray-100">
+               <div class="p-5">
+               <div class="text-start flex justify-between  ">
+                <h1>Route</h1>
+                <h1 class="text-lg font-semibold">Dhaka - Sylhet</h1>
+                </div>
+               <hr class="mt-2">
+                <div class="text-start flex justify-between mt-6 ">
+                <h1>Departure Time</h1>
+                <h1 class="text-lg font-semibold">9:00 PM</h1>
+                 </div>
+              <hr class="mt-2">
+             </div>
+             <!-- 3 btn -->
+                <div class="p-4 flex justify-around font-inter">
+                  <button class="btn btn-wide bg-gray-200">Boarding Point - Laxmipur </button>
+                  <button class="btn btn-wide bg-gray-200">Dropping Point - Bogura</button>
+                  <button class="btn btn-wide bg-gray-200">Est. Time - 11 Hour</button>
+                </div>
+                 </div>
+             </div>
+             <div>
+               <img src="images/info-devider.png" alt="">
+             </div>
+             <div class="flex flex-col justify-center items-center gap-5 ml-20">
+              <img class="h-[48px] w-[48px]" src="images/fare.png" alt="">
+               <h1 class="text-3xl font-extrabold">550 Taka</h1>
+               <h1 class="text-2xl font-semibold text-gray-600"> Per Seat </h1>
+             </div>
+            </div>
+            <!-- input fild -->
+            
+          </div>
+         <!--code  -->
+         <section  id="ticket-buy" class="container mx-auto mt-5 min-h-screen ">
+          <div class="card  bg-base-100 shadow-2xl">
+            <!-- contaienr -->
+            <div class="grid lg:grid-cols-2  gap-10 justify-between card-body">
+              <div>
+                <p class="text-2xl font-semibold">Select Your Seat</p>
+                <hr class="mt-3">
+                <div class="flex justify-between mt-3">
+                  <div class="flex gap-4">
+                  <img src="images/seat-gray.png" alt="">
+                  <h1 class="text-lg ">Available</h1>
+                  </div>
+                  <div class="flex gap-4">
+                    <img src="images/seat-green-filled.png" alt="">
+                    <h1 class="text-lg text-[#1DD100] font-semibold">Selected</h1>
+                  </div>
+                </div>
+                <hr class="mt-4">
+                  <!-- many 40 btn -->
+                 <!-- many 40 btn --> <div class="text-end mt-4">
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg "><img  class="px-5" src="images/wheel.png" alt="">
+                 </button>
+               </div>
+                <!-- start -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 mt-4  gap-4 ">
+                  <div class="set-btn ">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-lg w-full"> A1
+                   </button>
+                   </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg"> A2
+                   </button>
+                   </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg"> A3
+                   </button>
+                   </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">A4
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">B1
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">B2
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">B3
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">B4
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">C1
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">C2
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">C3
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">C4
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">D1
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">D2
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">D3
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">D4
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">E1
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">E2
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">E3
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">E4
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">F1
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">F2
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">F3
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">F4
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">G1
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">G2
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">G3
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">G4
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">H1
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">H2
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">H3
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">H4
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">I1
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">I2
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">I3
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">I4
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">J1
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">J2
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">J3
+                   </button>
+                    </div>
+                   <div class="set-btn">
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-lg">J4
+                   </button>
+                    </div> 
+                </div>
+              </div>
+            <div>  
+              <p class="text-2xl font-semibold">Select Your Seat</p>
+              <hr class="mt-3">
+              <!-- RIGHT SITE INPUT -->
+              <div class="card w-full bg-base-100 shadow-2xl  mt-12 p-2">
+                <div class="card-body bg-gray-100 rounded-lg ">
+                   <table>
+                    <tr>
+                      <th> Seat<span id="seat" class="text-lg text-white bg-[#1DD100]">0</span> </th>
+                      <th>Class</th>
+                      <th>Price</th>
+                    </tr>
+                   </table>
+                   <hr>
+                    <table class="font-thin">
+                      <tr>
+                        <th>slk</th>
+                        <th>slk</th>
+                        <th>slk</th>
+                      </tr>
+                    </table>
+                  <hr>
+                  <div class="flex justify-between mt-2 font-inter">
+                    <h1 class="text-lg font-semibold">Total Price</h1>
+                    <h1 class="text-xl font-semibold">BDT <span id="total">0</span> </h1>
+                  </div>
+                  <div>
+                     <div class="mt-2 font-inter">
+                      <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Search" />
+                        <span class="btn bg-[#1DD100] text-white w-32 text-lg">Apply</span>
+                      </label>
+                    </div>
+                    <div class="flex justify-between mt-4 font-inter">
+                      <h1 class="text-lg font-semibold">Grand Total</h1>
+                      <h1 class="text-xl font-semibold">BDT <span id="grand-total">0</span> </h1>
+                    </div>
+                  </div>
+                </div>
+                <!-- name emainl and number -->
+                <div class="mt-5 mb-5 font-inter">
+                  <h1 class="text-lg font-semibold mb-2">Passenger Name*</h1>
+                  <label class="input input-bordered flex items-center gap-2">
+                    
+                    <input type="text" class="grow" placeholder="Enter your name">
+                  </label>
+                <div class="mt-5 mb-5">
+                  <h1 class="text-lg font-semibold mb-2">Phone Number*</h1>
+                  <label class="input input-bordered flex items-center gap-2">
+                    <input type="number" class="grow" placeholder="Enter your phone number">
+                  </label>
+                </div>
+                <div class="mt-5 mb-5">
+                  <h1 class="text-lg font-semibold mb-2">Email ID*</h1>
+                  <label class="input input-bordered flex items-center gap-2">
+                    <input type="email" class="grow" placeholder="Enter your email">
+                  </label>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full bg-[#1DD100] text-lg text-white font-semibold">NEXT</button>
+              </div>
+              <div class="flex justify-around mt-3 mb-4 underline underline-offset-1">
+                <a href="">Terms and Conditions</a>
+                <a href="">Cancellation Policy</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
     <footer>
 
